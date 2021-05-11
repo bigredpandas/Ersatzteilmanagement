@@ -21,7 +21,7 @@ def beta_calc(t_value, n):
 
 # ----------------- Frontend
 
-st.title("Demonstrator systematisches Ersatzteilmanagement")
+st.title("Demonstrator Ersatzteilmanagement")
 st.write("Dieser Demonstrator berechnet auf Basis der eingegeben Daten die kostenoptimale Lagermenge des Werkzeugtyps.")
 Kalk_Zinssatz_jährlich = st.slider("Wähle den jährlichen kalk. Zinssatz aus in %", 0, 30, 10, 1)/100 # 10% / Jahr für Berechnung der Kapitalbindungskosten
 Kalk_Zinssatz = (Kalk_Zinssatz_jährlich +1)**(1/365) - 1 # Kalkulation des täglichen Zinssatzes
